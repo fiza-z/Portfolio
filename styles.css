@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #25081f;
+    color: #fff;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #390e2c;
+    padding: 0 32px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo {
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+.logo span {
+    color: #ff4080;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    color: #fff;
+    transition: color 0.2s;
+    font-weight: 500;
+    padding: 11px 0;
+    border-bottom: 2px solid transparent;
+}
+nav a.active, nav a:hover {
+    color: #ff4080;
+    border-bottom: 2px solid #ff4080;
+}
+
+.main-content { padding: 36px 0 0 0; }
+
+/* Home Section */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+.hero-text {
+    max-width: 825px;
+}
+.hello {
+    font-size: 1.5em;
+    color: #fff;
+    opacity: .85;
+    margin-bottom: 10px;
+    margin-top: 50px;
+     margin-left: 12px;
+    letter-spacing: 1px;
+}
+.name-highlight {
+    color: #fff;
+    font-weight: 800;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+     margin-left: 12px;
+    
+}
+.name-highlight .accent {
+    color: #ff4080;
+}
+.role {
+    color: #ff4080;
+    font-weight: 600;
+    font-size: 1.8em;
+     margin-left: 12px;
+}
+.hero-desc{
+    color: #fff;
+    font-size: 1.5em;
+    opacity: .77;
+    margin-bottom: 18px;
+    margin-top: 12px;
+    margin-left: 12px;
+} 
+.hero-buttons {
+    margin-bottom: 20px;
+   
+}
+.hero-btn, .exp-btn, .contact-btn {
+    background: #ff4080;
+    color: #fff;
+    border: none;
+    padding: 9px 27px;
+    border-radius: 26px;
+    font-size: 1;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 12px #ff4080;
+    transition: background .15s;
+    text-decoration: none;
+    display: inline-block;
+}
+.about-btn{
+     background: #ff4080;
+    color: #fff;
+    border: none;
+    padding: 9px 27px;
+    border-radius: 26px;
+    font-size: 1;
+    font-weight: 600;
+    margin-left:350px;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 12px #ff4080;
+    transition: background .15s;
+    text-decoration: none;
+    display: inline-block;
+}
+.hero-btn:hover, .about-btn:hover, .exp-btn:hover, .contact-btn:hover {
+    background: #ba2f5b;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+.socials a {
+    margin-right: 11px;
+    color: #ff4080;
+    font-size: 1em;
+    transition: color 0.15s;
+}
+.socials a:hover { color: #fff; }
+
+.profile-pic {
+    width: 500px;        /* Adjust size as you need */
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 55% 50%, #fe5e86 70%, #2d2d2d 100%);
+    /* For glow effect around the circle */
+    box-shadow: 0 0 60px 17px #fe5e86cc;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    
+    margin-top: 2px;
+}
+
+.profile-pic img {
+    width: 500px;       /* Should be smaller than .profile-circle */
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;  /* Ensures no stretching/distortion */
+    box-shadow: 0 0 20px #fe5e8699; /* Subtle inner shadow */
+}
+
+
+/* About Me/Skills Section */
+.about-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+.about-details {
+    max-width: 825px;
+}
+.about-desc{
+   color: #fff;
+    font-size: 1.5em;
+    opacity: .77;
+    margin-bottom: .5px;
+    margin-top: 3%;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.about-role {
+    color: #ff4080;
+    font-weight: 600;
+    font-size: 1.8em;
+     margin-left: 200px;
+}
+
+.about-title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    
+     margin-left: 260px;
+}
+.about-title .accent {
+    color: #ff4080;
+}
+.my-skills-section {
+    background: #390e2c;
+    border-radius: 15px;
+    max-width: 550px;
+    padding: 21px 23px 17px 23px;
+    margin: 22px auto 0 auto;
+    box-shadow: 0 0 20px #ff4080c0;
+}
+.skills-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #fff;
+}
+.skills-title .accent { color: #ff4080; }
+.skill {
+    margin-bottom: 15px;
+}
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    margin-bottom: 3px;
+    color: #fff;
+    opacity: .85;
+}
+.skill-bar-bg {
+    width: 100%;
+    background: #390e2c;
+    border-radius: 40px;
+    height: 12px;
+    overflow: hidden;
+}
+.skill-bar-fill {
+    height: 12px;
+    background: linear-gradient(90deg, #ff4080 80%, #fff0 100%);
+    border-radius: 40px 0 0 40px;
+}
+.skill-html { width: 92%; }
+.skill-css { width: 86%; }
+.skill-js { width: 78%; }
+.skill-figma { width: 60%; }
+
+/* Contact Page */
+.contact-section {
+    max-width: 420px;
+    margin: 60px auto 0 auto;
+    background: #390e2c;
+    border-radius: 14px;
+    padding: 34px 28px;
+    box-shadow: 0 0 18px #ff4080c0;
+}
+.contact-title {
+    font-size: 1.2em;
+    color: #ff4080;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+.contact-row {
+    margin-bottom: 16px;
+    font-size: 1.04em;
+}
+.contact-label {
+    color: #ff4080;
+    font-weight: 600;
+    margin-right: 7px;
+}
+.contact-link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1em;
+}
+.contact-link:hover { color: #fff; }
+
+/* Experience Page */
+.work-experience-section {
+    background: #390e2c;
+    border-radius: 17px;
+    max-width: 550px;
+    margin: 32px auto 0 auto;
+    padding: 21px 25px 22px 25px;
+    box-shadow: 0 0 18px #ff4080c0;
+}
+
+.work-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 19px;
+}
+.work-title .accent {
+    color: #ff4080;
+}
+
+.work-item {
+    border-left: 5px solid #ae163c;
+    margin-bottom: 22px;
+    padding-left: 14px;
+}
+
+.work-role {
+    color: #ff4080;
+    font-weight: 700;
+    font-size: 1.07em;
+    margin-bottom: 4px;
+}
+
+.work-company {
+    color: #fff;
+    font-size: .98em;
+    margin-bottom: 5px;
+}
+
+.work-desc {
+    color: #fff;
+    opacity: .8;
+    font-size: .96em;
+    margin-bottom: 5px;
+}
+.exp-section {
+    max-width: 620px;
+    margin: 60px auto 0 auto;
+    background: #390e2c;
+    border-radius: 14px;
+    padding: 34px 28px;
+    box-shadow: 0 0 18px #ff4080c0;
+}
+.exp-title {
+    font-size: 1.2em;
+    color: #ff4080;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+.exp-item {
+    border-left: 5px solid #ae163c;
+    margin-bottom: 26px;
+    padding-left: 15px;
+}
+.exp-role {
+    color: #ff4080;
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 1.06em;
+}
+.exp-company, .exp-dates {
+    color: #fff;
+    font-weight: 500;
+    font-size: .98em;
+}
+.exp-dates {
+    color: #ae163c;
+    margin-bottom: 2px;
+}
+.exp-desc {
+    color: #fff;
+    opacity: .8;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+    .hero, .about-section, .about-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .about-container, .main-content, .contact-section, .exp-section {
+        padding: 8px;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    nav { text-align: left; }
+}
